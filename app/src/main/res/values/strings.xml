@@ -4,7 +4,7 @@
     <string name="wristassist_menu_saved_chats">Saved chats</string>
     <string name="wristassist_menu_settings">Settings</string>
     <string name="wristassist_menu_about">About</string>
-    
+
     <string name="wristassist_click_to_reveal">Click to reveal</string>
     <string name="wristassist_no_internet">Connection to API failed. Please check your internet connection.</string>
     <string name="wristassist_timeout">The timeout of 120 seconds was reached. Probably the answer was very long or the API is overloaded.</string>
@@ -14,21 +14,23 @@
     <string name="wristassist_no_saved_chats">You haven\'t saved any chats yet.\nTouch the Save-Button in a new chat to save.</string>
     <string name="wristassist_chat_cost">Token usage:</string>
     <string name="wristassist_chat_deleted">Deleted chat</string>
+
     <string name="wristassist_change_api_key">Change API key</string>
     <string name="wristassist_no_api_key">No API key set</string>
     <string name="wristassist_vibrate">Vibrate</string>
     <string name="wristassist_font_size">Font size</string>
     <string name="wristassist_show_cost">Show cost</string>
     <string name="wristassist_select_model">Chat-AI model</string>
-
-    <!-- Corrected format strings with dynamic arguments -->
-    <string name="wristassist_token_usage">Token usage: %1$s</string>
-    <string name="wristassist_estimated_cost">Cost: ~ %1$s $</string>
-    <string name="wristassist_total_cost">Total cost: ~ %1$s $</string>
-    <string name="wristassist_images_count">Number of images: %1$s</string>
-    <string name="wristassist_image_expires_in">Shared link will expire in %1$d minutes</string>
+    <string name="wristassist_api_settings">API settings</string>
+    <string name="wristassist_chat_settings">Chat settings</string>
+    <string name="wristassist_tts_settings">TTS settings</string>
+    <string name="wristassist_tts">TTS</string>
+    <string name="wristassist_tts_volume">TTS volume</string>
+    <string name="wristassist_tts_lang_not_available">TTS language not available. Download in settings.</string>
+    <string name="wristassist_tts_not_available">Couldn\'t connect to TTS engine.</string>
 
     <string name="wristassist_about">WristAssist %1$s\n© 2024 Jannis Zahn</string>
+
     <string name="wristassist_okay">OK</string>
     <string name="wristassist_cancel">Cancel</string>
 
@@ -46,6 +48,9 @@
     <string name="wristassist_context_exceeded">Your chat is too long for the AI. Please reset or start a new one.</string>
     <string name="wristassist_quota_exceeded">You exceeded your current quota, please check your plan and billing details.</string>
     <string name="wristassist_no_access">This model does not exist or you don\'t have access to it.</string>
+    <string name="changelog_md">## See what\'s new  \n*The following improvements have been added since the last launch of WristAssist:*  \n</string>
+    <string name="changelog_md_22">### Version 2.5.0  \n#### Auto voice input  \nAdded a setting to automatically open voice input in chats (saves a few clicks)  \n#### Custom API server  \nAdded a setting to choose your private OpenAI-like API server  \n#### Changelog  \nAdded this changelog activity so that you get informed about all upcoming news  \n</string>
+    <string name="changelog_md_21">### Version 2.4.0  \n#### Added Markdown rendering in chats  \nThe AI models sometimes display text in **bold**, *italics* or &lt;u&gt;underlined&lt;/u&gt;. This and other formatting is now displayed correctly.  \n#### Added GPT-4 Turbo model  \nGPT-4 Turbo is more capable and has knowledge of world events up to April 2023. It is between 2 and 3 times cheaper than GPT-4.  \n#### More detailed error messages  \nErrors such as too long chats, exceeded quota and invalid models are now displayed correctly.  \n#### Several bugfixes  \n</string>
     <string name="wristassist_no_speech_recognition">No keyboard with speech recognition installed</string>
     <string name="wristassist_hands_free">Hands-free input</string>
     <string name="wristassist_custom_host">Custom host</string>
@@ -56,18 +61,51 @@
     <string name="wristassist_invalid_host">Invalid URL format</string>
     <string name="wristassist_ai">AI</string>
     <string name="wristassist_complication_description">Complication to open WristAssist</string>
+    <string name="changelog_md_23">### Version 2.6.0  \n#### Added watchface complication  \nAdded a complication for your watchfaces to quickly open the WristAssist input screen.  \n#### Scroll to bottom shortcut  \nIf you click on a saved chat title, it will immediately scroll to bottom.  \n#### Vibration on error  \nIf an error occurs in the chat, you will now feel a different vibration.  \n</string>
     <string name="wristassist_tts_on">On</string>
     <string name="wristassist_tts_off">Off</string>
     <string name="wristassist_tts_on_auto">On + Auto read</string>
     <string name="wristassist_tts_adapt_to_input">Adapt to input</string>
-    <string name="changelog_md_22">### Version 2.5.0  \n#### Auto voice input  \nAdded a setting to automatically open voice input in chats (saves a few clicks)  \n#### Custom API server  \nAdded a setting to choose your private OpenAI-like API server  \n#### Changelog  \nAdded this changelog activity so that you get informed about all upcoming news  \n</string>
-    <string name="changelog_md_23">### Version 2.6.0  \n#### Added watchface complication  \nAdded a complication for your watchfaces to quickly open the WristAssist input screen.  \n#### Scroll to bottom shortcut  \nIf you click on a saved chat title, it will immediately scroll to bottom.  \n#### Vibration on error  \nIf an error occurs in the chat, you will now feel a different vibration.  \n</string>
     <string name="changelog_md_24">### Version 2.6.1  \n#### Added more TTS settings  \nTTS settings are now in a single list. You can choose between: On, Off, On and auto read and adapted to the input method.  \n</string>
+    <string name="wristassist_menu_usage">Usage</string>
+
+    <!-- Fixes for dynamic strings -->
+    <string name="wristassist_token_usage">Token usage: %1$s</string>
+    <string name="wristassist_estimated_cost">Cost: ~ %1$s $</string>
+    <string name="wristassist_total_cost">Total cost: ~ %1$s $</string>
+    <string name="wristassist_images_count">Number of images: %1$s</string>
+    <string name="wristassist_image_expires_in">Shared link will expire in %1$d minutes</string>
+
+    <string name="wristassist_reset">Reset</string>
+    <string name="wristassist_no_usage_yet">No usage yet</string>
+    <string name="wristassist_instant_input">Instant input</string>
     <string name="changelog_md_25">### Version 2.7.0  \n#### Added usage activity  \nAdded activity to check the usage of the individual models.  \n#### Instant input  \nAdded setting to start a new chat immediately.  \n#### Several bugfixes  \n</string>
+    <string name="wristassist_menu_images">Images</string>
+    <string name="wristassist_describe_image">Describe the image</string>
+    <string name="wristassist_image_hint">A cute dog with a hat</string>
+    <string name="wristassist_last_modified">Last modified:</string>
+    <string name="wristassist_images_settings">Images settings</string>
+    <string name="wristassist_select_image_model">Images-AI model</string>
+    <string name="wristassist_select_image_quality">Image quality</string>
+    <string name="wristassist_select_image_size">Image size</string>
+    <string name="wristassist_select_image_style">Image style</string>
+    <string name="wristassist_image_quality_vivid">Vivid</string>
+    <string name="wristassist_image_quality_natural">Natural</string>
+    <string name="wristassist_open_image_prompt">Prompt:</string>
+    <string name="wristassist_open_image_revised_prompt">Revised prompt:</string>
+    <string name="wristassist_open_image_model">Model:</string>
+    <string name="wristassist_open_image_quality">Quality:</string>
+    <string name="wristassist_open_image_size">Size:</string>
+    <string name="wristassist_open_image_style">Style:</string>
+    <string name="wristassist_open_image_created">Created:</string>
+    <string name="wristassist_image_request_rejected">The request was rejected. Your prompt may contain text that is not allowed.</string>
     <string name="changelog_md_26">### Version 3.0.0  \n#### Added image AI (DALL-E)  \nYou can now use OpenAI\'s Dall-E to generate, save and share images via a QR code. You can switch between different models, qualities and sizes in the settings.  \n#### Several bugfixes and design changes  \n</string>
+    <string name="wristassist_saving">Saving …</string>
     <string name="changelog_md_27">### Version 3.0.1  \n#### Important notice: Changes to your OpenAI API billing  \nOpenAI is updating how they bill for your OpenAI API account starting **March 8, 2024**. Instead of receiving a bill at the end of the month, you will need to **pre-purchase credits** to use the API. <u>Just click the okay button to add credits to your account.</u> Otherwise, API requests will temporarily fail for WristAssist until credits are purchased.  \n</string>
     <string name="changelog_md_28">### Version 3.0.2  \n#### Several bugfixes and design changes  \n</string>
     <string name="changelog_md_29">### Version 3.0.3  \n#### New GPT-4 Omni model  \nOpenAI introduced a new flagship model, that can reason across audio, vision, and text in real time. Support for input method other than text will be available in the future. You can switch to this model, which is only half the price as "GPT-4 Turbo", in the settings.  \n</string>
+    <string name="wristassist_global_system_query">Global system query</string>
+    <string name="wristassist_define_global_system_prompt">Define global system prompt</string>
     <string name="changelog_md_30">### Version 3.1.0  \n#### Global system prompts  \nYou can now set a global system role in the settings, that the AI will use in every chat.  \n</string>
     <string name="changelog_md_31">### Version 3.1.1  \n#### New GPT-4 Omni mini model  \nOpenAI released their new model GPT-4o mini, which is their most cost-efficient small model that\'s smarter and cheaper than GPT-3.5 Turbo, and has vision capabilities. The model has 128K context and an October 2023 knowledge cutoff. You can switch to this model, which is 60% cheaper than GPT-3.5 Turbo, in the settings.  \n</string>
 </resources>

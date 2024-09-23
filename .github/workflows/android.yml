@@ -27,9 +27,6 @@ jobs:
     - name: Run Android Lint
       run: ./gradlew lint
 
-    - name: Run Kotlin Detekt
-      run: ./gradlew detekt
-
     - name: Run Java type checker
       run: ./gradlew check
 

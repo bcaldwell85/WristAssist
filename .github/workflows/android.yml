@@ -23,5 +23,26 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+      
+    - name: Run Android Lint
+      run: ./gradlew lint
+
+    - name: Run Kotlin Detekt
+      run: ./gradlew detekt
+
+    - name: Run Java type checker
+      run: ./gradlew check
+
+    # Build the project
+    - name: Build with Gradle
+      run: ./gradlew build
+
+    # Optional: Upload the APK for downloading
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-debug.apk
+        path: app/build/outputs/apk/debug/app-debug.apk
+      
     - name: Build with Gradle
       run: ./gradlew build

@@ -1,0 +1,9 @@
+gha_enabled: true
+linters:
+  - name: Android Lint
+    run: ./gradlew lint
+  - name: Kotlin Detekt
+    run: ./gradlew detekt
+type_checkers:
+  - name: Java Type Checker
+    run: ./gradlew check

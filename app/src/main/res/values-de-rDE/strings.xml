@@ -58,10 +58,10 @@
     <string name="wristassist_tts_adapt_to_input">An Eingabemethode angepasst</string>
     <string name="changelog_md_24">### Version 2.6.1  \n#### Weitere TTS-Einstellungen hinzugefügt  \nDie TTS-Einstellungen sind jetzt in einer einzigen Liste zusammengefasst. Du kannst wählen zwischen: Ein, Aus, Ein und Automatisch lesen und angepasst an die Eingabemethode.  \n</string>
     <string name="wristassist_menu_usage">Verbrauch</string>
-    <string name="wristassist_token_usage" formatted="false">Token Verbauch: %1$s</string>
-    <string name="wristassist_estimated_cost" formatted="false">Kosten: ~ %1$s $</string>
+    <string name="wristassist_token_usage">Token Verbauch: %1$s</string>
+    <string name="wristassist_estimated_cost">Kosten: ~ %1$s $</string>
     <string name="wristassist_reset">Zurücksetzen</string>
-    <string name="wristassist_total_cost" formatted="false">Gesamtkosten: ~ %1$s $</string>
+    <string name="wristassist_total_cost">Gesamtkosten: ~ %1$s $</string>
     <string name="wristassist_no_usage_yet">Kein Verbrauch bisher</string>
     <string name="wristassist_instant_input">Direkte Eingabe</string>
     <string name="changelog_md_25">### Version 2.7.0  \n#### Aktivität zum Überprüfen des Verbrauchs  \nAktivität hinzugefügt, um die Nutzung der einzelnen Modelle zu überprüfen.  \n#### Direkte Eingabe  \nEinstellung zum sofortigen Starten eines neuen Chats hinzugefügt.  \n#### Mehrere Fehlerbehebungen  \n</string>
